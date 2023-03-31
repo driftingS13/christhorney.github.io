@@ -133,7 +133,7 @@ ul {
 }
 
 header {
-    background: url("https://driftings13.github.io/assets/images/header-bg.jpg");
+    background: url("/assets/images/header-bg.jpg");
     background-size: 100% 100%;
     padding-bottom: 20px;
             
@@ -176,7 +176,7 @@ header {
 /* start home css */
 
 .main-index {
-    background: url("https://driftings13.github.io/assets/images/cash-basil.JPG");
+    background: url("/assets/images/cash-basil.JPG");
     background-size: contain;
     background-position: top center;
     background-repeat: repeat;
@@ -241,6 +241,7 @@ main {
 
 .cash-body {
     background-color: skyblue;
+    background: url("/assets/images/cash-background.JPG");
 }
 
 .h1-cash {
