@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <html>
+
+            <!-- following lines to be at top of every page for site Heading, logo and Nav bar to the next comment  <title>This page contains pictures of my Random things, Cars and Motorcycles.</title> -->
+            <head>
+                <link rel="stylesheet" href="quadBattle/quad.css" type="text/css">
+                <title>This is my First Full solo Javascrip project.</title>
+            </head>
+
+            <body>
+                
+                <div class="head-div">
+                    <header>
+                        <h1 class="h1-index">Chris's Web Development Website</h1>
+                        <nav class="main-nav">
+                            <a class="main-nav-links" href="index.html">HOME</a>
+                            <a class="main-nav-links" href="cash.html">CASH & BASIL</a>
+                            <a class="main-nav-links" href="cars.html">CARS & THINGS</a>
+                            <a class="main-nav-links" href="projects.html">PROJECTS</a>
+                        </nav>
+                    </header>
+                </div>
+        <!-- this comment is to mark the end of the required lines -->
+        <!-- scoring catagories can include:Difficulty.useOfSpace,Variation,Exicution&Style,Flow&Creativity,Showmanship/Presintation -->
+                <h1 class="qh1">FREESTYLE QUAD BATTLE</h1>
+                <h2 class="qh2">SCORING SYSTEM</h2>
+
+                <div class="battle-div">
+
+                    <div class="pilot1-div">
+                        <h1 id="pilot1Name">Pilot 1</h1>
+                        <div id="list">
+                            
+                            <div>-DIFFICULTY-     <input type="number" id="p1a" name="input-field" placeholder="0.0-10.0" min="0" max="10" step="0.1"></div>
+                            <div>-USE OF SPACE-     <input type="number" id="p1b" name="input-field" placeholder="0.0-10.0" min="0" max="10" step="0.1"></div>
+                            <div>-VARIATION-     <input type="number" id="p1c" name="input-field" placeholder="0.0-10.0" min="0" max="10" step="0.1"></div>
+                            <div>-EXICUTION-     <input type="number" id="p1d" name="input-field" placeholder="0.0-10.0" min="0" max="10" step="0.1"></div>
+                            <div>-PRESINTATION-     <input type="number" id="p1e" name="input-field" placeholder="0.0-10.0" min="0" max="10" step="0.1"></div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="pilot2-div">
+                        <h1 id="pilot2Name">Pilot 2</h1>
+                        <div id="list">
+                            
+                            <div><input type="number" id="p2a" name="input-field" placeholder="0.0-10.0" min="0" max="10" step="0.1">     -DIFFICULTY-</div>
+                            <div><input type="number" id="p2b" name="input-field" placeholder="0.0-10.0" min="0" max="10" step="0.1">     -USE OF SPACE-</div>
+                            <div><input type="number" id="p2c" name="input-field" placeholder="0.0-10.0" min="0" max="10" step="0.1">     -VARIATION-</div>
+                            <div><input type="number" id="p2d" name="input-field" placeholder="0.0-10.0" min="0" max="10" step="0.1">     -EXICUTION-</div>
+                            <div><input type="number" id="p2e" name="input-field" placeholder="0.0-10.0" min="0" max="10" step="0.1">     -PRESINTATION-</div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="res-div">
+                   <button id="res-btn" onclick="resBtn()">Click for RESULTS</button>
+                   <h1 id="res-el">The winner is..?</h1>
+                   <h3>Previous Winners:</h3><h3 id="prev-el">Previous winner Names: </h3>
+                </div> 
+
+                <div class="ent-name">
+
+                    <h2>Enter Pilot Names</h2>
+                    <input id="name1" type="text" placeholder="Pilot 1">
+                    <input id="name2" type="text" placeholder="Pilot 2">
+                    <button id="name-btn" onclick="names()">APPLY</button>
+
+                </div>
+
+                <div class="guide">
+                    <ul>
+                        <li>An explination of the Judging Catagories, and a Guide on their inteded Implimentation. This can also be used as a Skate, BMX or Scooter freestyle battle scoring system equally as well</li>
+                        <li>Runs should be between 1min and 2min, any shorter and its hard to make good use of a space, and any longer its hard to not be repetative unless your in a 10/10 location. Run times should be similar or somewhat 'Regulated' for a fair battle.</li>
+                        <li><strong>Difficulty:</strong>This section can be thought of in 2 ways, Half of the score should be for Overall Difficulty of the run as a Whole, And the second half should be reserved for the Hardest 1-2 Bangers of the run.</li>
+                        <li><strong>Use of Space:</strong>This section can also be though of in 2 ways, Half of the score should be allocated to Choice of Space, and the Second Half should be for how well that space was utilised.</li>
+                        <li><strong>Variation:</strong>This section is all about Trick Variation, This can be one of the Deciding Factors, repetative tricks should be penalised here, as should long periods with no tricks.</section></li>
+                        <li><strong>Exicution:</strong>This catagory will mean different things to different people, To me this should be reserved to individual tricks this is inteded to be used for scoring how well individual tricks, Espesually the Bangers are exicuted. The style and smoothness entering the tricks, smoothness during the tricks, and exiting the tricks and it stops scoring once the trick is completed and they start heading for the next trick or obsticle.</li>
+                        <li><strong>Flow & Creativity:</strong>This catagory will also mean different things to different people, To me this should be an overall Impression type score, How well were the Tricks Exicuted and Obsticle's Utilised, was the time between tricks well utilised with obsticles and gaps, how well were the tricks linked, and how much dead time just flying around. Cuts in the footage should be Penalised here -1pt if it contains cuts and +1pt if it is a clean 1 pack with no crashes and a netural point if its a 1 pack that ends with a crash as the ending of the run. The creativity portion should be for flying creativity not editing.</li>
+                        <li><strong>Presintation:</strong>This catagory will also mean different things to different people, To me this should be an overall Impression type score. A MASSIVE part of freestyle FPV is making a Video for others to enjoy and experence, This catagory is for How well is the Video Presented, the editing skills and tequniques, quality of the footage, If your using it to score live runs, then this can be considered a Showmanship catagory, How they keep the energy up and keep the crowd and judges entertained and on the edge of their seat! bonus point for if your risking an expencive gopro, netural if you have something like a runcam thumbPro or a caddx Turtle style camera, and -1 pt penalty for us analog dvr plebs... this includes me LOL!</li>
+                    </ul>
+                </div>
+                <script src="quadBattle/quad.js"></script>
+            </body>
+
+
+    </html>
