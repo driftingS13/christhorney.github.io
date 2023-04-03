@@ -288,3 +288,31 @@ strong {
 /* start projects css */
 
 /* end projects css */
+
+/* start BattleApp css */
+
+.qbody {
+    background-image: url(/quadBattle/images/quaddvr.jpg);
+    background-size: contain;
+}
+
+.block {
+    display: block;
+}
+
+.battle-div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.no-dot {
+    list-style-type: none;
+}
+
+.pilot1-div {
+    align-self: self-end;
+}
+
+
+
+/* end battleApp css */
