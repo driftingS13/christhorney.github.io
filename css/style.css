@@ -291,7 +291,7 @@ strong {
 /* start BattleApp css */
 
 .qbody {
-    background-image: url("/quaddvr.jpg");
+    background-image: url("quaddvr.jpg");
     background-size: contain;
 }
 
