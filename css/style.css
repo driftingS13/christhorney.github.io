@@ -5,7 +5,7 @@ body {
     padding: 0;
     min-height: 900px;
     text-align: center;
-    font-family: 'Brush Script MT', cursive;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     text-shadow: 0px 0px 3px black;
     background-image: linear-gradient(to bottom right, skyblue, rgb(0, 74, 104));
