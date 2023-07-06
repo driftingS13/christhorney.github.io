@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html>
+
+            <!-- following lines to be at top of every page for site Heading, logo and Nav bar to the next comment <title>This page contains cool pictures of random things I have taken.</title> -->
+            <head>
+                <link rel="stylesheet" href="/css/style.css" type="text/css">
+                <title>This is my First Solo Project website, I will work on it over time and continue to improve it.</title>
+            </head>
+
+            <body>
+                
+                <div class="head-div">
+                    <header>
+                        <h1 class="h1-index">Chris's Web Development Website</h1>
+                        <nav class="main-nav">
+                            <a class="main-nav-links" href="index.html">HOME</a>
+                            <a class="main-nav-links" href="cash.html">CASH & BASIL</a>
+                            <a class="main-nav-links" href="cars.html">CARS & THINGS</a>
+                            <a class="main-nav-links" href="projects.html">PROJECTS</a>
+                        </nav>
+                    </header>
+                </div>
+        <!-- this comment is to mark the end of the required lines -->
+
+                <div class="intro">
+                    <h1 class="h1-index">Remove duplicate Numbers or Words from any size list.</h1>
+                    <h3>I made this tool so I could work out the Postage Zones on my webstore, Tools for getting the Postcodes within a bunch of different radius circles on a map exists and works well except it doesnt seperate the inner zones from the list of postcodes in the outter zones, so instead of painstakingly going through the list and manually removing the duplicates, I made this tool so that i can paste the results in and get an output that I can use for my wordpress shipping calculater hopefully lol.</h3>
+                </div>
+                <div class="tool">
+                    <h2>Insert large list</h2>
+                    <input class="list1" type="text" placeholder="3 input methods:'3030, 3031, 3032' '3030 3031 3032' '3030,3031,3032' as examples of inputs">
+                    <h2>Insert Small list</h2>
+                    <input class="list2" type="text" placeholder="3 input methods:'3030, 3031, 3032' '3030 3031 3032' '3030,3031,3032' as examples of inputs">
+                    <h1><button id="go-btn" onclick="compute()">COMPUTE!</button></h1>
+                    <h2>Here is your Large List minus the Small List</h2>
+                    <input class="list3" type="text" placeholder="Output List">
+
+                </div>
+
+
+
+                <script src="postcode.js"></script>
+            </body>
