@@ -11,7 +11,7 @@ function compute() {
     var result = array1.filter(item => !array2.includes(item));
   
     // Convert the resulting array to the desired format
-    //var output = result.join(", ");
+    var output = result.join(", ");
   
     // Set the value of the output field
     document.querySelector(".list3").value = output;
