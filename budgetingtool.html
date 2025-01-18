@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="firstJSproject/css/style.css" type="text/css">
+        <title>Expense, Income and Savings Calculator</title>
+        
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Budget Manager</h1>
+    
+            <!-- Add Expense Form -->
+            <h2>Add Expense</h2>
+            <div class="form-group">
+                <label for="expense-name">Expense Name:</label>
+                <input type="text" id="expense-name" placeholder="Enter expense name">
+            </div>
+            <div class="form-group">
+                <label for="expense-amount">Amount:</label>
+                <input type="number" id="expense-amount" placeholder="Enter amount">
+            </div>
+            <div class="form-group">
+                <label for="expense-frequency">Frequency:</label>
+                <select id="expense-frequency">
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="yearly">Yearly</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="expense-start-date">Start Date:</label>
+                <input type="date" id="expense-start-date">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="expense-ongoing">
+                <label for="expense-ongoing">Ongoing</label>
+            </div>
+            <button onclick="addExpense()">Add Expense</button>
+    
+            <!-- Expense Table -->
+            <h2>Expenses</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <th>Frequency</th>
+                        <th>Start Date</th>
+                        <th>Ongoing</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="expense-table-body">
+                    <!-- Expenses will be dynamically added here -->
+                </tbody>
+            </table>
+    
+            <!-- Add Income Form -->
+            <h2>Add Income</h2>
+            <div class="form-group">
+                <label for="income-name">Income Source:</label>
+                <input type="text" id="income-name" placeholder="Enter income source">
+            </div>
+            <div class="form-group">
+                <label for="income-amount">Amount:</label>
+                <input type="number" id="income-amount" placeholder="Enter amount">
+            </div>
+            <div class="form-group">
+                <label for="income-frequency">Frequency:</label>
+                <select id="income-frequency">
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="yearly">Yearly</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="income-start-date">Start Date:</label>
+                <input type="date" id="income-start-date">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="income-ongoing">
+                <label for="income-ongoing">Ongoing</label>
+            </div>
+            <button onclick="addIncome()">Add Income</button>
+    
+            <!-- Income Table -->
+            <h2>Income</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <th>Frequency</th>
+                        <th>Start Date</th>
+                        <th>Ongoing</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="income-table-body">
+                    <!-- Income will be dynamically added here -->
+                </tbody>
+            </table>
+    
+            <!-- Budget Summary -->
+            <h2>Budget Summary</h2>
+            <div class="totals">
+                <span>Daily Expenses: $<strong id="daily-expenses">0.00</strong></span>
+                <span>Weekly Expenses: $<strong id="weekly-expenses">0.00</strong></span>
+                <span>Monthly Expenses: $<strong id="monthly-expenses">0.00</strong></span>
+                <span>Daily Income: $<strong id="daily-income">0.00</strong></span>
+                <span>Weekly Income: $<strong id="weekly-income">0.00</strong></span>
+                <span>Monthly Income: $<strong id="monthly-income">0.00</strong></span>
+                <span>After-Tax Total (Weekly): $<strong id="after-tax-total">0.00</strong></span>
+            </div>
+        </div>
+    
+        <script src="budget.js"></script>
+    </body>
+</html>
